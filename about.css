@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  background-color: rgb(49, 49, 49);
+  
+  display : flex;
+  justify-content: space-between;
+  padding: 5px 10px ;
+
+  margin : 0px 0px 0px 0px;
+  
+  & > div:nth-child(1) {
+    font-weight: bolder;
+    font-size: 15px ;
+    color: white;
+  }
+
+  & > .head-menu {
+    font-size : 12px;
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    
+    & a {
+      color : grey;
+      cursor : pointer;
+    }
+
+  }
+  
+  & > .head-menu:hover{
+    color : yellow;
+  }
+  
+  & > .head-menu a.active {
+    color: yellow;
+  }
+  
+}
+
+main {
+  width: auto;
+  height: auto;
+  
+  & > .main_top{
+    background-color: rgb(209, 208, 208);
+    padding : 20px;
+
+    & > .intro_title {
+      font-weight: bolder;
+      font-size: 20px;
+    }
+
+    & > .filter_text{
+      font-size : 10px;
+      color: gray;
+    }
+  }
+
+  & > .main_body{
+
+    margin: 20px 10px;
+
+    }
+
+    & table {
+      width: 100%;
+      table-layout: fixed;
+      border-collapse: collapse;
+      text-align: center;      
+
+      font-size: 10px;
+    }
+
+    & td {
+      padding: 10px;
+    }
+
+    & .intro_text td:first-child {
+      width: 30%;
+      background-color: #ddd;
+      color: gray;
+    }
+
+    & .header{
+      background-color: rgb(209, 208, 208);      
+      font-weight: bolder;      
+    }
+  }
+
+  #subtitle {
+    background-color: rgb(209, 208, 208); 
+    font-size: 15px;    
+
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0px;
+
+    border-left : 6px solid rgb(49, 49, 49);
+    padding-left : 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+
+
+footer {
+  background-color: rgb(49, 49, 49);
+  padding : 10px;
+
+  & > .text {
+    font-size : 9px;
+    color :  grey;
+
+  }
+
+}
